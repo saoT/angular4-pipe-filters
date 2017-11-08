@@ -1,0 +1,9 @@
+<p>
+  posts works!
+</p>
+{{search}}
+<input type="text" [(ngModel)]="search">
+<div *ngFor="let chicken of ( chickens | filter : search )">
+  <h4>{{chicken.name}}</h4>
+  <div>{{chicken.hobby}}</div>
+</div>
